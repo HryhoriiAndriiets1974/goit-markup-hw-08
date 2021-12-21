@@ -213,8 +213,15 @@ header {
 
 .hero {
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/new-foto.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/new-foto.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/header/header480x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/header/header480x.jpg);
+  width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__title {
@@ -515,7 +522,6 @@ header {
 
 .footer {
   background: var(--bg-color);
-  padding: 60px 0;
 }
 
 .footer__contact {
@@ -816,14 +822,7 @@ header {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-f {
-  padding-top: 16px;
-  margin-left: 93px;
-  position: relative;
-}
-
 .form-f__input {
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -834,9 +833,6 @@ header {
   line-height: calc(20 / 16);
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -871,18 +867,11 @@ header {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
-  padding-left: 29px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 62px;
   cursor: pointer;
   margin-left: 12px;
 }
 
 .form-f__icon {
-  position: absolute;
-  right: 20px;
-  bottom: 40px;
   fill: #fff;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
