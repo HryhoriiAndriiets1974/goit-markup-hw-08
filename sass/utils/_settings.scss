@@ -10,31 +10,31 @@ body {
   font-size: normal;
 }
 .section {
-  padding-top: 94px;
+  // padding-top: 94px;
 }
 .section:last-child {
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
 }
 .section__title {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.66667;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
 }
 .section--darker {
   background: var(--bg-team);
 }
 .container {
-  padding: 0 15px;
-  width: 1200px;
-  margin: 0 auto;
+  // padding: 0 15px;
+  // width: 1200px;
+  // margin: 0 auto;
 }
 .container__end {
-  display: flex;
-  justify-content: flex-start;
+  // display: flex;
+  // justify-content: flex-start;
 }
 .hidden-elem {
   width: 1px;
@@ -47,6 +47,6 @@ body {
 nav,
 .site-nav,
 .auth-nav {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
