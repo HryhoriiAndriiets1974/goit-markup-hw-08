@@ -1,0 +1,15 @@
+// @include FlexCenter();
+@mixin Anime($type: fill) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin ColorText($color) {
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin FlexCenter($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
