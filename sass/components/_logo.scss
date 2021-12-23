@@ -1,10 +1,34 @@
 .logo {
-  font-family: Raleway;
+  // font-family: Raleway;
+  // color: var(--accent-color);
+  // font-weight: bold;
+  // font-size: 26px;
+  // line-height: 1.192;
+  // letter-spacing: 0.03em;
+  //------------------------------
+  // @include colorTextDecor($logoColor);
+  display: inline-block;
+
   color: var(--accent-color);
+
+  font-family: Raleway;
+  font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 81px;
+    font-size: 24px;
+    line-height: 1.16;
+    display: inline-flex;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__text {
   color: var(--title-text-color);
