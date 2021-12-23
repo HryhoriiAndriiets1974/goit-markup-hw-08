@@ -1,8 +1,9 @@
 .hero {
   // text-align: center;
   // padding: 200px 0;
+  background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-    url('../images/header/header480x.jpg');
+    url('../images/header/header480.jpg');
   width: 480px;
   height: 400px;
   // display: block;
@@ -12,13 +13,13 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     width: 768px;
     background-image: linear-gradient(
       to right,
        rgba(47, 48, 58, 0.5),
        rgba(47, 48, 58, 0.3)),
-      url('../images/header/header768x.jpg');
+      url('../images/header/header768.jpg');
   }
   @media screen and (min-width: 1200px) {
     width: 1600px;
@@ -26,7 +27,7 @@
     height: 600px;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-      url('../images/header/header1600x.jpg');
+      url('../images/header/header1600.jpg');
   }
 }
 @media screen and (min-device-pixel-ratio: 2),
