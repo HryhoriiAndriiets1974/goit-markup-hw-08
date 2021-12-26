@@ -546,7 +546,8 @@ nav {
     line-height: 1.36;
   }
 }
-.hero__title .hero__button {
+
+.hero__button {
   color: #fff;
   font-family: inherit;
   background: var(--accent-color);
@@ -556,7 +557,7 @@ nav {
   line-height: 1.875;
   cursor: pointer;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   padding: 10px 32px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -565,7 +566,7 @@ nav {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__title .hero__button:hover, .hero__title .hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
   -webkit-transition-property: background-color;
   transition-property: background-color;
