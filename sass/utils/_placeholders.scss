@@ -5,7 +5,8 @@
   list-style: none;
 }
 %btn {
-  @include Anime(color, background-color);
+  @include Anime(color);
+  @include Anime(background-color);
   display: inline-block;
   min-width: 200px;
   height: 50px;
