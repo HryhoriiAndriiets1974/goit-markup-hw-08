@@ -1,8 +1,23 @@
 .logo {
-  font-family: Raleway;
-  color: var(--accent-color);
-  font-weight: bold;
+  // font-family: Raleway;
+  // color: var(--accent-color);
+  // font-weight: bold;
+  // font-size: 26px;
+  // line-height: 1.192;
+  // letter-spacing: 0.03em;
+  //------------------------------
+  // @include colorTextDecor($logoColor);
   display: inline-block;
+
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+<<<<<<< HEAD
+  display: inline-block;
+=======
+>>>>>>> 1397f2bc4a7161a033c2b7c0804ae037a6ddd9c1
 
   @media screen and (min-width: 0px) and (max-width: 767px) {
     font-size: 24px;
