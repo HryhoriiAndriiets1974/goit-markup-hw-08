@@ -32,7 +32,8 @@
 
   @media screen and (max-width: 767px) {
     width: 450px;
-    height: 482px;
+    height: 622px;
+    margin-bottom: 30px;
 
     // &:not(:last-child) {
     //   margin-bottom: 30px;
@@ -54,7 +55,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 .team__spec {
   color: var(--primary-text-color);
