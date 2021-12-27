@@ -173,7 +173,40 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team">
               <li class="team__item">
-                    <img src="./images/ID.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                <picture>
+                  <source srcset="
+                    ./images/ID/ID450@x.webp 1x,
+                    ./images/ID/ID450@xx.webp 2x "
+                    type="image/webp"
+                    media="(max-width: 767px)" />
+                  <source srcset="
+                    ./images/ID/ID354@x.webp 1x,
+                    ./images/ID/ID354@xx.webp 2x "
+                    type="image/webp"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
+                    ./images/ID/ID354x.jpg 1x,
+                    ./images/ID/ID354xx.jpg 2x "
+                    type="image/jpg"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
+                    ./images/ID/ID270@x.webp 1x,
+                    ./images/ID/ID270@xx.webp 2x "
+                    type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./images/ID/ID270x.jpg 1x,
+                    ./images/ID/ID270xx.jpg 2x "
+                    type="image/jpg"
+                    media="(min-width: 1200px)" />
+                <img  loading="lazy"
+                  srcset="
+                    ./images/ID/ID450x.jpg 1x,
+                    ./images/ID/ID450xx.jpg 2x "
+                  src="./images/ID/ID450x.jpg"
+                  alt="Игорь Демьяненко" />
+                </picture>
+                    <!-- <img src="./images/ID.jpg" alt="Игорь Демьяненко" width="270" height="260" /> -->
                       <h3 class="team__title">Игорь Демьяненко</h3>
                       <p lang="en" class="team__spec">Product Designer</p>
                       <ul class="social">
