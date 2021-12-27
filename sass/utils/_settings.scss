@@ -18,12 +18,23 @@ body {
 }
 .section__title {
   color: var(--title-text-color);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.66667;
+  // font-weight: bold;
+  // font-size: 36px;
+  // line-height: 1.66667;
   // display: flex;
   // justify-content: center;
   // margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .section--darker {
   background: var(--bg-team);
