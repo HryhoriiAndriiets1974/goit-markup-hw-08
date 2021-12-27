@@ -6,24 +6,24 @@
   border: none;
   background-color: transparent;
 
-  &--icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-
-    fill: currentColor;
-
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
-  }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.icon-cross,
+.icon-menu {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 .menu-button .icon-cross {
   display: none;
 }
@@ -45,7 +45,7 @@
   height: 400px;
   // background-color: palegoldenrod;
   // padding: 20px;
-  // // text-aling: center;
+  // text-aling: center;
   // font-size: 20px;
   // &.is-open {
   //   display: block;
@@ -73,19 +73,19 @@
   }
 
   @media screen and (min-width: 768px) {
-    // position: static;
+    position: static;
     border: none;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-
-    width: 768px;
+    align-items: center;
+    width: 528px;
     height: 80px;
     padding: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 980px;
   }
 }
 .contacts {
@@ -133,6 +133,7 @@ nav {
 
 .auth-nav__link {
   @include Anime(color);
+  @include Anime();
   @include FlexCenter($type: inline-flex);
   color: var(--primary-text-color);
   cursor: pointer;
@@ -153,6 +154,7 @@ nav {
   &:hover,
   &:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 .nav {

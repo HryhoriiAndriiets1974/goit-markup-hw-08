@@ -228,19 +228,23 @@ header .logo {
   border: none;
   background-color: transparent;
 }
-.menu-button--icon {
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.icon-cross,
+.icon-menu {
   display: inline-block;
   width: 40px;
   height: 40px;
   fill: currentColor;
 }
-.menu-button--icon:hover, .menu-button--icon:focus {
+.icon-cross:hover, .icon-cross:focus,
+.icon-menu:hover,
+.icon-menu:focus {
   fill: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
 }
 
 .menu-button .icon-cross {
@@ -284,6 +288,7 @@ header .logo {
 }
 @media screen and (min-width: 768px) {
   .menu-container {
+    position: static;
     border: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -294,14 +299,17 @@ header .logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    width: 768px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 528px;
     height: 80px;
     padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
-    width: 1200px;
+    width: 980px;
   }
 }
 
@@ -373,6 +381,8 @@ nav {
 .auth-nav__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -405,6 +415,7 @@ nav {
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .nav {
