@@ -360,6 +360,7 @@ header .logo {
   width: 40px;
   height: 40px;
   z-index: 1000;
+  cursor: pointer;
 }
 .menu__control:hover, .menu__control:focus {
   fill: var(--accent-color);
