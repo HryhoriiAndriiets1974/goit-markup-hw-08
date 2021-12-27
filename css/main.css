@@ -96,13 +96,13 @@ body {
   --bg-team: #f5f4fa;
 }
 
-.feature, .site-nav {
+.doing, .feature, .site-nav {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.container__header, .container {
+.container__doing, .container__header, .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -111,17 +111,17 @@ body {
   padding-bottom: 60px;
 }
 @media screen and (min-width: 480px) {
-  .container__header, .container {
+  .container__doing, .container__header, .container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container__header, .container {
+  .container__doing, .container__header, .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container__header, .container {
+  .container__doing, .container__header, .container {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -664,25 +664,55 @@ nav {
 }
 
 .doing {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.doing__item:last-child {
-  margin-right: 0;
+.container__doing {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .container__doing {
+    display: block;
+  }
 }
 
-.doing__wrapper {
+.doing__item {
+  width: calc((100% - 60px) / 3);
+}
+.doing__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.doing__link {
+  display: block;
+  position: relative;
   color: var(--for-black-color);
-  background: rgba(47, 48, 58, 0.8);
+}
+.doing__link--title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: #2f303a;
+  width: 100%;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.doing__title {
-  font-weight: 700;
-  font-size: 14px;
+.section__title--doing {
+  font-weight: bold;
+  font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .btns__button {
