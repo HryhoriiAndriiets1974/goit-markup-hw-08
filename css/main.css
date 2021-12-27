@@ -356,6 +356,15 @@ header .logo {
   }
 }
 
+.menu__control {
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+}
+.menu__control:hover, .menu__control:focus {
+  fill: var(--accent-color);
+}
+
 nav {
   color: var(--title-text-color);
   font-weight: 500;

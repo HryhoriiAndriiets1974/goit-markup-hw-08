@@ -117,6 +117,15 @@
     margin-right: 30px;
   }
 }
+.menu__control {
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 nav {
   color: var(--title-text-color);
   font-weight: 500;
