@@ -329,7 +329,39 @@
                 </li>
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                        <img src="./images/limited-edition.jpg" alt="Издание Limited Edition" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/limited-edition/limited-edition450@x.webp 1x,
+                            ./images/portfolio/limited-edition/limited-edition450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/limited-edition/limited-edition354@x.webp 1x,
+                            ./images/portfolio/limited-edition/limited-edition354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/limited-edition/limited-edition354x.jpg 1x,
+                            ./images/portfolio/limited-edition/limited-edition354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/limited-edition/limited-edition370@x.webp 1x,
+                            ./images/portfolio/limited-edition/limited-edition370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/limited-edition/limited-edition370x.jpg 1x,
+                            ./images/portfolio/limited-edition/limited-edition370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/limited-edition/limited-edition450x.jpg 1x,
+                            ./images/portfolio/limited-edition/limited-edition450xx.jpg 2x "
+                            src="./images/portfolio/limited-edition/limited-edition450x.jpg"
+                            alt="Издание Limited Edition"/>
+                      </picture>
+                        <!-- <img src="./images/limited-edition.jpg" alt="Издание Limited Edition" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
                         <h2 class="work-list__title">Издание Limited Edition</h2>
                         <p class="work-list__text">Дизайн</p>
