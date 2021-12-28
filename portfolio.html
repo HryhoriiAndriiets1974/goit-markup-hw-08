@@ -409,7 +409,39 @@
                 </li>
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                        <img src="./images/growing-b.jpg" alt="Growing Business" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/growing-b/growing-b450@x.webp 1x,
+                            ./images/portfolio/growing-b/growing-b450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/growing-b/growing-b354@x.webp 1x,
+                            ./images/portfolio/growing-b/growing-b354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/growing-b/growing-b354x.jpg 1x,
+                            ./images/portfolio/growing-b/growing-b354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/growing-b/growing-b370@x.webp 1x,
+                            ./images/portfolio/growing-b/growing-b370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/growing-b/growing-b370x.jpg 1x,
+                            ./images/portfolio/growing-b/growing-b370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/growing-b/growing-b450x.jpg 1x,
+                            ./images/portfolio/growing-b/growing-b450xx.jpg 2x "
+                            src="./images/portfolio/growing-b/growing-b450x.jpg"
+                            alt="Growing Business"/>
+                      </picture>
+                        <!-- <img src="./images/growing-b.jpg" alt="Growing Business" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
                         <h2 class="work-list__title">Growing Business</h2>
                         <p class="work-list__text">Приложение</p>
