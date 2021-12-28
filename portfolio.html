@@ -159,7 +159,7 @@
                             ./images/portfolio/new-orlean/new-orlean450x.jpg 1x,
                             ./images/portfolio/new-orlean/new-orlean450xx.jpg 2x "
                             src="./images/portfolio/new-orlean/new-orlean450x.jpg"
-                            alt="Технокряк"/>
+                            alt="Постер New Orlean vs Golden Star"/>
                       </picture>
                         <!-- <img src="./images/new-orlean.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
@@ -169,7 +169,39 @@
                 </li>
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                        <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/seafood/seafood450@x.webp 1x,
+                            ./images/portfolio/seafood/seafood450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/seafood/seafood354@x.webp 1x,
+                            ./images/portfolio/seafood/seafood354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/seafood/seafood354x.jpg 1x,
+                            ./images/portfolio/seafood/seafood354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/seafood/seafood370@x.webp 1x,
+                            ./images/portfolio/seafood/seafood370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/seafood/seafood370x.jpg 1x,
+                            ./images/portfolio/seafood/seafood370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/seafood/seafood450x.jpg 1x,
+                            ./images/portfolio/seafood/seafood450xx.jpg 2x "
+                            src="./images/portfolio/seafood/seafood450x.jpg"
+                            alt="Ресторан Seafood"/>
+                      </picture>
+                        <!-- <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
                         <h2 class="work-list__title">Ресторан Seafood</h2>
                         <p  class="work-list__text">Приложение</p>
