@@ -11,29 +11,50 @@
 </head>
 <body> <!-- -->
   <header class="header"> <!-- Шапка-->
-    <div class="container">
-      <nav>
-        <ul class="site-nav">
-          <li><a href="index.html" class="logo">Web<span class="logo__text">Studio</span></a></li>
-          <li><a href="index.html" class="site-nav__link">Студия</a></li>
-          <li><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
-          <li><a href="" class="site-nav__link">Контакты</a></li>
-        </ul>
-
-        <ul class="auth-nav">
-          <li><a href="mailto:info@devstudio.com" class="auth-nav__link">
-            <svg class="auth-nav__img" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope" ></use>
+    <div class="container container__header">
+      <a href="index.html" class="logo">Web<span class="logo__text">Studio</span></a>
+      <nav class="nav class="site-nav__item>
+        <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="true"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu__control"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/icons.svg#menu"></use>
+              <use class="icon-menu" href="./images/icons.svg#close"></use>
             </svg>
-            info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="auth-nav__link">
-            <svg class="auth-nav__img" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a></li>
+          </button>
 
-        </ul>
-      </nav>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="site-nav">
+                <li class="site-nav__item"><a href="index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a>
+              </ul>
+            </div>
+            <div class="contacts">
+              <ul class="auth-nav">
+                <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__link">
+                  <svg class="auth-nav__img" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope" ></use>
+                  </svg>                  info@devstudio.com</a></li>
+                <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__link">
+                  <svg class="auth-nav__img" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>                  +38 096 111 11 11</a></li>
+
+              </ul>
+            </div>
+          </div>
+       </nav>
     </div>
 
   </header>
@@ -140,8 +161,8 @@
         </section>
     </main>
     <footer class="footer"> <!-- Підвал-->
-      <div class="container container__end">
-        <div>
+      <div class="container footer__container">
+        <div class="footer__wrapper">
           <a href="index.html" class="logo">Web<span class="logo__text logo__text--light">Studio</span></a>
           <ul class="footer__contact">
             <li><address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address></li>
@@ -186,21 +207,27 @@
               </li>
             </ul>
         </div>
-        <form action="true" class="form-f">
+        <form class="form-f">
           <h3 class="form-f__title">Подпишитесь на рассылку</h3>
-          <label>
-            <input type="email"  class="form-f__input" name="email" placeholder="E-mail"/>
+            <div class="form-f__wrapper">
+              <label>
+                <input type="email"  class="form-f__input" name="email" placeholder="E-mail"/>
 
-          </label>
-          <button type="submit" class="form-f__btn">Подписаться</button>
-          <span>
-            <svg class="form-f__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send">
-              </use>
-            </svg>
-          </span>
+              </label>
+              <button type="submit" class="form-f__btn">Подписаться</button>
+              <span>
+                <svg class="form-f__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send">
+                  </use>
+                </svg>
+              </span>
+            </div>
+
         </form>
         </div>
-    </footer>
+      </div>
+      </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/current.js"></script>
 </body>
 </html>
