@@ -85,7 +85,39 @@
             <ul class="work-list">
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                        <img src="./images/tk.jpg" alt="Технокряк" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/tk/tk450@x.webp 1x,
+                            ./images/portfolio/tk/tk450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/tk/tk354@x.webp 1x,
+                            ./images/portfolio/tk/tk354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/tk/tk354x.jpg 1x,
+                            ./images/portfolio/tk/tk354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/tk/tk370@x.webp 1x,
+                            ./images/portfolio/tk/tk370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/tk/tk370x.jpg 1x,
+                            ./images/portfolio/tk/tk370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/tk/tk450x.jpg 1x,
+                            ./images/portfolio/tk/tk450xx.jpg 2x "
+                            src="./images/portfolio/tk/tk450x.jpg"
+                            alt="Технокряк"/>
+                      </picture>
+                        <!-- <img src="./images/tk.jpg" alt="Технокряк" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
                         <h2 class="work-list__title">Технокряк</h2>
                         <p  class="work-list__text">Веб-сайт</p>
