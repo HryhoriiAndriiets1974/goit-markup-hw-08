@@ -209,7 +209,39 @@
                 </li>
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                        <img src="./images/prime.jpg" alt="Проект Prime" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/prime/prime450@x.webp 1x,
+                            ./images/portfolio/prime/prime450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/prime/prime354@x.webp 1x,
+                            ./images/portfolio/prime/prime354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/prime/prime354x.jpg 1x,
+                            ./images/portfolio/prime/prime354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/prime/prime370@x.webp 1x,
+                            ./images/portfolio/prime/prime370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/prime/prime370x.jpg 1x,
+                            ./images/portfolio/prime/prime370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/prime/prime450x.jpg 1x,
+                            ./images/portfolio/prime/prime450xx.jpg 2x "
+                            src="./images/portfolio/prime/prime450x.jpg"
+                            alt="Проект Prime"/>
+                      </picture>
+                        <!-- <img src="./images/prime.jpg" alt="Проект Prime" width="370" height="294" /> -->
                         <div class="work-list__tehno"></div>
                         <h2 class="work-list__title">Проект Prime</h2>
                         <p class="work-list__text">Маркетинг</p>
