@@ -289,7 +289,39 @@
                 </li>
                 <li class="work-list__item">
                     <a href="#" class="work-list__link">
-                      <img src="./images/borders.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+                      <picture>
+                        <source srcset="
+                            ./images/portfolio/borders/borders450@x.webp 1x,
+                            ./images/portfolio/borders/borders450@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 767px)" />
+                        <source srcset="
+                            ./images/portfolio/borders/borders354@x.webp 1x,
+                            ./images/portfolio/borders/borders354@xx.webp 2x "
+                            type="image/webp"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/borders/borders354x.jpg 1x,
+                            ./images/portfolio/borders/borders354xx.jpg 2x "
+                            type="image/jpg"
+                            media="(max-width: 1199px)" />
+                        <source srcset="
+                            ./images/portfolio/borders/borders370@x.webp 1x,
+                            ./images/portfolio/borders/borders370@xx.webp 2x "
+                            type="image/webp"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/portfolio/borders/borders370x.jpg 1x,
+                            ./images/portfolio/borders/borders370xx.jpg 2x "
+                            type="image/jpg"
+                            media="(min-width: 1200px)" />
+                        <img loading="lazy" srcset="
+                            ./images/portfolio/borders/borders450x.jpg 1x,
+                            ./images/portfolio/borders/borders450xx.jpg 2x "
+                            src="./images/portfolio/borders/borders450x.jpg"
+                            alt="Inspiration has no Borders"/>
+                      </picture>
+                      <!-- <img src="./images/borders.jpg" alt="Inspiration has no Borders" width="370" height="294" /> -->
                       <div class="work-list__tehno"></div>
                       <h2 class="work-list__title">Inspiration has no Borders</h2>
                       <p class="work-list__text">Веб-сайт</p>
