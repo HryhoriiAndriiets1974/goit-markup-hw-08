@@ -536,6 +536,7 @@ nav {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url("../images/header/header480.jpg");
   width: 480px;
   height: 400px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   background-size: contain;
