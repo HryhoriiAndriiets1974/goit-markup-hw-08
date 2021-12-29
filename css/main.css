@@ -1485,10 +1485,15 @@ nav {
 
 .form__label-check {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(24 / 14);
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+@media screen and (min-width: 768px) {
+  .form__label-check {
+    font-size: 14px;
+  }
 }
 
 .form__conditions {
