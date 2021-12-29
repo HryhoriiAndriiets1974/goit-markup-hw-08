@@ -265,7 +265,8 @@ header .logo {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 465px;
+  height: 490px;
+  font-size: 24px;
   background-color: var(--for-black-color);
   border-top: 1px solid #ececec;
   padding: 60px 15px;
@@ -309,6 +310,9 @@ header .logo {
     padding: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 1200px) {
