@@ -65,13 +65,22 @@
   fill: var(--title-text-color);
 }
 .form__icon--person {
-  top: 105px;
+  top: 128px;
+  @media screen and (min-width: 768px) {
+    top: 105px;
+  }
 }
 .form__icon--email {
-  top: 238px;
+  top: 263px;
+  @media screen and (min-width: 768px) {
+    top: 238px;
+  }
 }
 .form__icon--phone {
-  top: 172px;
+  top: 196px;
+  @media screen and (min-width: 768px) {
+    top: 172px;
+  }
 }
 .form__input:focus,
 .form__input:hover,
@@ -151,7 +160,11 @@
   color: #fff;
   padding: 10px 55px;
   margin-top: 30px;
-  margin-left: 124px;
+  margin-left: 85px;
+  @media screen and (min-width: 768px) {
+    margin-left: 124px;
+  }
+
   cursor: pointer;
   &:focus,
   &:hover {
