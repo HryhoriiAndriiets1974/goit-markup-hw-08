@@ -1,8 +1,4 @@
 .feature {
-  // padding: 0;
-  // margin: 0;
-  // list-style: none;
-  // display: flex;
   @extend %list;
 
   @media screen and (min-width: 768px) {
@@ -12,11 +8,6 @@
   }
 }
 .feature__item {
-  // flex-basis: calc(100% / 4)-30px;
-  // margin-right: 30px;
-  // &:last-child {
-  //   margin-right: 0;
-  // }
   @media screen and (max-width: 767px) {
     width: 450px;
 
@@ -26,12 +17,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    // width: 354px;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    // width: 270px;
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
@@ -58,13 +47,6 @@
   line-height: 1.714;
 }
 .feature__wrapper {
-  // width: 270px;
-  // height: 120px;
-  // padding: 0;
-  // margin-bottom: 30px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   border: none;
   background: var(--bg-team);
 }
