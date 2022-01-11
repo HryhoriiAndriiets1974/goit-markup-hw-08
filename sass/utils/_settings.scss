@@ -8,6 +8,9 @@ body {
   background: var(--for-black-color);
   color: var(--title-text-color);
 }
+body.modal-open {
+  overflow: hidden;
+}
 .section {
   // padding-top: 94px;
   min-width: 480px;

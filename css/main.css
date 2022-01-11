@@ -41,7 +41,10 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   background: var(--for-black-color);
   color: var(--title-text-color);
-  font-size: normal;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .section {
@@ -1305,6 +1308,8 @@ nav {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 50px 40px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
