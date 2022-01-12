@@ -89,4 +89,6 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
 }
