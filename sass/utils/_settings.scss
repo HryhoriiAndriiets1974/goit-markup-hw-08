@@ -7,6 +7,7 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   background: var(--for-black-color);
   color: var(--title-text-color);
+  margin: 0;
 }
 body.modal-open {
   overflow: hidden;
