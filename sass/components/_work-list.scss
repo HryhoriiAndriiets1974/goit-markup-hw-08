@@ -10,6 +10,9 @@
   }
 }
 .work-list__item {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   @include Anime(box-shadow);
   @media screen and (max-width: 767px) {
     width: 450px;
@@ -85,10 +88,13 @@
   }
 }
 .work-list__content {
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  // border-bottom: 1px solid #eeeeee;
+  // border-right: 1px solid #eeeeee;
+  // border-left: 1px solid #eeeeee;
   padding: 20px 24px;
   -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+.work-list__type {
   flex-grow: 1;
 }
