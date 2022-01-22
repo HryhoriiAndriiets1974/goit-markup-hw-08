@@ -1758,18 +1758,38 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
-.box {
-  outline: 2px greenyellow solid;
-  margin: 5px;
+.frame {
+  width: 480px;
+  height: 360px;
+}
+@media screen and (min-width: 768px) {
+  .frame {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .frame {
+    width: 1200px;
+    height: 900px;
+  }
+}
+
+.section__title--contacts {
+  margin-top: 94px;
+}
+
+.contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.box__text {
-  outline: 2px red solid;
-  padding: 10px 20px;
-  margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=main.css.map */

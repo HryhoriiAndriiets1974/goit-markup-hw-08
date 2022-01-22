@@ -1,4 +1,24 @@
 .container__maps {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+.frame {
+  width: 480px;
+  height: 360px;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 900px;
+  }
+}
+.section__title--contacts {
+  margin-top: 94px;
+}
+.contacts__wrapper {
+  @include FlexCenter();
 }
