@@ -1751,6 +1751,15 @@ nav {
   }
 }
 
+.container__maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .box {
   outline: 2px greenyellow solid;
   margin: 5px;
