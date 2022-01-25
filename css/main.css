@@ -1888,4 +1888,17 @@ nav {
 .mobile-socials__item:hover .mobile-socials__link,
 .mobile-socials__item:focus .mobile-socials__link {
   color: var(--accent-color);
+}
+
+.copy__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.copy__text {
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
