@@ -1,6 +1,5 @@
 const workListItem = document.querySelectorAll('.work-list__item');
 const btnsItem = document.querySelectorAll('.btns__item');
-// const id = document.querySelectorAll('.work-list__item li[data-id=*]');
 
 console.log(workListItem);
 console.log(btnsItem);
